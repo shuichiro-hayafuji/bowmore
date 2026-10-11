@@ -1,0 +1,3835 @@
+{
+  "schema_version": 1,
+  "status": "design_catalog_not_app_implementation",
+  "description": "1回10分の学習メニュー案100件。20テーマ×5構成。100種類の異なるテーマや会話台本が完成したという意味ではない。英語例文は教材案で、音声・対話全体・学習効果は未検証。",
+  "confirmed_requirements": {
+    "pattern_count": 100,
+    "duration_minutes": 10,
+    "selection": "uniform_random_within_current_learning_stages_without_required_manual_selection",
+    "correction_timing": "after_conversation",
+    "persist_recordings": false,
+    "persist_transcript_and_feedback": true,
+    "transcript_and_feedback_retention": "until_deleted_by_owner",
+    "history_access": "owner_only",
+    "history_deletion": "available_to_owner"
+  },
+  "proposed_selection": {
+    "baseline": "uniform_random_within_current_learning_stages",
+    "exclude_previous_pattern": "optional_proposal_not_confirmed",
+    "reselect": "optional_proposal_not_confirmed",
+    "adaptive_weakness_weighting": "future_proposal_not_confirmed"
+  },
+  "patterns": [
+    {
+      "id": "LP-001",
+      "topic_id": "TOPIC-01",
+      "title": "初対面で名前と仕事を伝える：一通り練習する",
+      "stage": "short_response",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "名前と仕事を伝え、相手の仕事を聞く",
+      "expression_example": "I work in product development.",
+      "partner_question_example": "What do you do?",
+      "success_criteria": [
+        "名前と仕事を伝え、相手の仕事を聞く",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「初対面で名前と仕事を伝える」で使う表現を音と意味で確認する。例：I work in product development."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What do you do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「名前と仕事を伝え、相手の仕事を聞く」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-002",
+      "topic_id": "TOPIC-01",
+      "title": "初対面で名前と仕事を伝える：聞き取りを重点的に練習する",
+      "stage": "short_response",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "名前と仕事を伝え、相手の仕事を聞く",
+      "expression_example": "I work in product development.",
+      "partner_question_example": "What do you do?",
+      "success_criteria": [
+        "名前と仕事を伝え、相手の仕事を聞く",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「初対面で名前と仕事を伝える」で使う表現を音と意味で確認する。例：I work in product development."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What do you do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「名前と仕事を伝え、相手の仕事を聞く」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-003",
+      "topic_id": "TOPIC-01",
+      "title": "初対面で名前と仕事を伝える：自分の言葉で話す",
+      "stage": "short_response",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "名前と仕事を伝え、相手の仕事を聞く",
+      "expression_example": "I work in product development.",
+      "partner_question_example": "What do you do?",
+      "success_criteria": [
+        "名前と仕事を伝え、相手の仕事を聞く",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「初対面で名前と仕事を伝える」で使う表現を音と意味で確認する。例：I work in product development."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What do you do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「名前と仕事を伝え、相手の仕事を聞く」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-004",
+      "topic_id": "TOPIC-01",
+      "title": "初対面で名前と仕事を伝える：表現を会話で使う",
+      "stage": "short_response",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "名前と仕事を伝え、相手の仕事を聞く",
+      "expression_example": "I work in product development.",
+      "partner_question_example": "What do you do?",
+      "success_criteria": [
+        "名前と仕事を伝え、相手の仕事を聞く",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「初対面で名前と仕事を伝える」で使う表現を音と意味で確認する。例：I work in product development."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What do you do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「名前と仕事を伝え、相手の仕事を聞く」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-005",
+      "topic_id": "TOPIC-01",
+      "title": "初対面で名前と仕事を伝える：別の言い方で伝える",
+      "stage": "short_response",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "名前と仕事を伝え、相手の仕事を聞く",
+      "expression_example": "I work in product development.",
+      "partner_question_example": "What do you do?",
+      "success_criteria": [
+        "名前と仕事を伝え、相手の仕事を聞く",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「初対面で名前と仕事を伝える」で使う表現を音と意味で確認する。例：I work in product development."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What do you do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「名前と仕事を伝え、相手の仕事を聞く」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-006",
+      "topic_id": "TOPIC-02",
+      "title": "担当業務を紹介する：一通り練習する",
+      "stage": "short_response",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "自分が担当することを短く説明する",
+      "expression_example": "I'm responsible for planning.",
+      "partner_question_example": "What are you responsible for?",
+      "success_criteria": [
+        "自分が担当することを短く説明する",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「担当業務を紹介する」で使う表現を音と意味で確認する。例：I'm responsible for planning."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What are you responsible for?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「自分が担当することを短く説明する」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-007",
+      "topic_id": "TOPIC-02",
+      "title": "担当業務を紹介する：聞き取りを重点的に練習する",
+      "stage": "short_response",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "自分が担当することを短く説明する",
+      "expression_example": "I'm responsible for planning.",
+      "partner_question_example": "What are you responsible for?",
+      "success_criteria": [
+        "自分が担当することを短く説明する",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「担当業務を紹介する」で使う表現を音と意味で確認する。例：I'm responsible for planning."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What are you responsible for?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「自分が担当することを短く説明する」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-008",
+      "topic_id": "TOPIC-02",
+      "title": "担当業務を紹介する：自分の言葉で話す",
+      "stage": "short_response",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "自分が担当することを短く説明する",
+      "expression_example": "I'm responsible for planning.",
+      "partner_question_example": "What are you responsible for?",
+      "success_criteria": [
+        "自分が担当することを短く説明する",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「担当業務を紹介する」で使う表現を音と意味で確認する。例：I'm responsible for planning."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What are you responsible for?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「自分が担当することを短く説明する」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-009",
+      "topic_id": "TOPIC-02",
+      "title": "担当業務を紹介する：表現を会話で使う",
+      "stage": "short_response",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "自分が担当することを短く説明する",
+      "expression_example": "I'm responsible for planning.",
+      "partner_question_example": "What are you responsible for?",
+      "success_criteria": [
+        "自分が担当することを短く説明する",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「担当業務を紹介する」で使う表現を音と意味で確認する。例：I'm responsible for planning."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What are you responsible for?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「自分が担当することを短く説明する」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-010",
+      "topic_id": "TOPIC-02",
+      "title": "担当業務を紹介する：別の言い方で伝える",
+      "stage": "short_response",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "自分が担当することを短く説明する",
+      "expression_example": "I'm responsible for planning.",
+      "partner_question_example": "What are you responsible for?",
+      "success_criteria": [
+        "自分が担当することを短く説明する",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「担当業務を紹介する」で使う表現を音と意味で確認する。例：I'm responsible for planning."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What are you responsible for?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「自分が担当することを短く説明する」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-011",
+      "topic_id": "TOPIC-03",
+      "title": "チームの役割を紹介する：一通り練習する",
+      "stage": "short_response",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "チームが誰を支援するかを説明する",
+      "expression_example": "Our team helps customers.",
+      "partner_question_example": "What does your team do?",
+      "success_criteria": [
+        "チームが誰を支援するかを説明する",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「チームの役割を紹介する」で使う表現を音と意味で確認する。例：Our team helps customers."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What does your team do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「チームが誰を支援するかを説明する」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-012",
+      "topic_id": "TOPIC-03",
+      "title": "チームの役割を紹介する：聞き取りを重点的に練習する",
+      "stage": "short_response",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "チームが誰を支援するかを説明する",
+      "expression_example": "Our team helps customers.",
+      "partner_question_example": "What does your team do?",
+      "success_criteria": [
+        "チームが誰を支援するかを説明する",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「チームの役割を紹介する」で使う表現を音と意味で確認する。例：Our team helps customers."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What does your team do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「チームが誰を支援するかを説明する」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-013",
+      "topic_id": "TOPIC-03",
+      "title": "チームの役割を紹介する：自分の言葉で話す",
+      "stage": "short_response",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "チームが誰を支援するかを説明する",
+      "expression_example": "Our team helps customers.",
+      "partner_question_example": "What does your team do?",
+      "success_criteria": [
+        "チームが誰を支援するかを説明する",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「チームの役割を紹介する」で使う表現を音と意味で確認する。例：Our team helps customers."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What does your team do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「チームが誰を支援するかを説明する」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-014",
+      "topic_id": "TOPIC-03",
+      "title": "チームの役割を紹介する：表現を会話で使う",
+      "stage": "short_response",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "チームが誰を支援するかを説明する",
+      "expression_example": "Our team helps customers.",
+      "partner_question_example": "What does your team do?",
+      "success_criteria": [
+        "チームが誰を支援するかを説明する",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「チームの役割を紹介する」で使う表現を音と意味で確認する。例：Our team helps customers."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What does your team do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「チームが誰を支援するかを説明する」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-015",
+      "topic_id": "TOPIC-03",
+      "title": "チームの役割を紹介する：別の言い方で伝える",
+      "stage": "short_response",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "チームが誰を支援するかを説明する",
+      "expression_example": "Our team helps customers.",
+      "partner_question_example": "What does your team do?",
+      "success_criteria": [
+        "チームが誰を支援するかを説明する",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「チームの役割を紹介する」で使う表現を音と意味で確認する。例：Our team helps customers."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What does your team do?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「チームが誰を支援するかを説明する」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-016",
+      "topic_id": "TOPIC-04",
+      "title": "普段の仕事を説明する：一通り練習する",
+      "stage": "short_response",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "普段行う仕事を二つ挙げる",
+      "expression_example": "I usually review feedback.",
+      "partner_question_example": "What do you usually do at work?",
+      "success_criteria": [
+        "普段行う仕事を二つ挙げる",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「普段の仕事を説明する」で使う表現を音と意味で確認する。例：I usually review feedback."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What do you usually do at work?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「普段行う仕事を二つ挙げる」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-017",
+      "topic_id": "TOPIC-04",
+      "title": "普段の仕事を説明する：聞き取りを重点的に練習する",
+      "stage": "short_response",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "普段行う仕事を二つ挙げる",
+      "expression_example": "I usually review feedback.",
+      "partner_question_example": "What do you usually do at work?",
+      "success_criteria": [
+        "普段行う仕事を二つ挙げる",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「普段の仕事を説明する」で使う表現を音と意味で確認する。例：I usually review feedback."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What do you usually do at work?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「普段行う仕事を二つ挙げる」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-018",
+      "topic_id": "TOPIC-04",
+      "title": "普段の仕事を説明する：自分の言葉で話す",
+      "stage": "short_response",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "普段行う仕事を二つ挙げる",
+      "expression_example": "I usually review feedback.",
+      "partner_question_example": "What do you usually do at work?",
+      "success_criteria": [
+        "普段行う仕事を二つ挙げる",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「普段の仕事を説明する」で使う表現を音と意味で確認する。例：I usually review feedback."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What do you usually do at work?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「普段行う仕事を二つ挙げる」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-019",
+      "topic_id": "TOPIC-04",
+      "title": "普段の仕事を説明する：表現を会話で使う",
+      "stage": "short_response",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "普段行う仕事を二つ挙げる",
+      "expression_example": "I usually review feedback.",
+      "partner_question_example": "What do you usually do at work?",
+      "success_criteria": [
+        "普段行う仕事を二つ挙げる",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「普段の仕事を説明する」で使う表現を音と意味で確認する。例：I usually review feedback."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What do you usually do at work?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「普段行う仕事を二つ挙げる」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-020",
+      "topic_id": "TOPIC-04",
+      "title": "普段の仕事を説明する：別の言い方で伝える",
+      "stage": "short_response",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "普段行う仕事を二つ挙げる",
+      "expression_example": "I usually review feedback.",
+      "partner_question_example": "What do you usually do at work?",
+      "success_criteria": [
+        "普段行う仕事を二つ挙げる",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「普段の仕事を説明する」で使う表現を音と意味で確認する。例：I usually review feedback."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What do you usually do at work?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「普段行う仕事を二つ挙げる」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-021",
+      "topic_id": "TOPIC-05",
+      "title": "聞き返して意味を確認する：一通り練習する",
+      "stage": "short_response",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "仕事紹介で聞き取れなかった内容を確認する",
+      "expression_example": "Could you say that again?",
+      "partner_question_example": "What would you like me to repeat?",
+      "success_criteria": [
+        "仕事紹介で聞き取れなかった内容を確認する",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「聞き返して意味を確認する」で使う表現を音と意味で確認する。例：Could you say that again?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What would you like me to repeat?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「仕事紹介で聞き取れなかった内容を確認する」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-022",
+      "topic_id": "TOPIC-05",
+      "title": "聞き返して意味を確認する：聞き取りを重点的に練習する",
+      "stage": "short_response",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "仕事紹介で聞き取れなかった内容を確認する",
+      "expression_example": "Could you say that again?",
+      "partner_question_example": "What would you like me to repeat?",
+      "success_criteria": [
+        "仕事紹介で聞き取れなかった内容を確認する",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「聞き返して意味を確認する」で使う表現を音と意味で確認する。例：Could you say that again?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What would you like me to repeat?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「仕事紹介で聞き取れなかった内容を確認する」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-023",
+      "topic_id": "TOPIC-05",
+      "title": "聞き返して意味を確認する：自分の言葉で話す",
+      "stage": "short_response",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "仕事紹介で聞き取れなかった内容を確認する",
+      "expression_example": "Could you say that again?",
+      "partner_question_example": "What would you like me to repeat?",
+      "success_criteria": [
+        "仕事紹介で聞き取れなかった内容を確認する",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「聞き返して意味を確認する」で使う表現を音と意味で確認する。例：Could you say that again?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What would you like me to repeat?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「仕事紹介で聞き取れなかった内容を確認する」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-024",
+      "topic_id": "TOPIC-05",
+      "title": "聞き返して意味を確認する：表現を会話で使う",
+      "stage": "short_response",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "仕事紹介で聞き取れなかった内容を確認する",
+      "expression_example": "Could you say that again?",
+      "partner_question_example": "What would you like me to repeat?",
+      "success_criteria": [
+        "仕事紹介で聞き取れなかった内容を確認する",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「聞き返して意味を確認する」で使う表現を音と意味で確認する。例：Could you say that again?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What would you like me to repeat?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「仕事紹介で聞き取れなかった内容を確認する」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-025",
+      "topic_id": "TOPIC-05",
+      "title": "聞き返して意味を確認する：別の言い方で伝える",
+      "stage": "short_response",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "仕事紹介で聞き取れなかった内容を確認する",
+      "expression_example": "Could you say that again?",
+      "partner_question_example": "What would you like me to repeat?",
+      "success_criteria": [
+        "仕事紹介で聞き取れなかった内容を確認する",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「聞き返して意味を確認する」で使う表現を音と意味で確認する。例：Could you say that again?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What would you like me to repeat?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「仕事紹介で聞き取れなかった内容を確認する」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-026",
+      "topic_id": "TOPIC-06",
+      "title": "今取り組んでいることを説明する：一通り練習する",
+      "stage": "give_reasons",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "今の仕事と目的を伝える",
+      "expression_example": "We're working on a new feature.",
+      "partner_question_example": "Why are you working on it?",
+      "success_criteria": [
+        "今の仕事と目的を伝える",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「今取り組んでいることを説明する」で使う表現を音と意味で確認する。例：We're working on a new feature."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Why are you working on it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「今の仕事と目的を伝える」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-027",
+      "topic_id": "TOPIC-06",
+      "title": "今取り組んでいることを説明する：聞き取りを重点的に練習する",
+      "stage": "give_reasons",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "今の仕事と目的を伝える",
+      "expression_example": "We're working on a new feature.",
+      "partner_question_example": "Why are you working on it?",
+      "success_criteria": [
+        "今の仕事と目的を伝える",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「今取り組んでいることを説明する」で使う表現を音と意味で確認する。例：We're working on a new feature."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「Why are you working on it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「今の仕事と目的を伝える」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-028",
+      "topic_id": "TOPIC-06",
+      "title": "今取り組んでいることを説明する：自分の言葉で話す",
+      "stage": "give_reasons",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "今の仕事と目的を伝える",
+      "expression_example": "We're working on a new feature.",
+      "partner_question_example": "Why are you working on it?",
+      "success_criteria": [
+        "今の仕事と目的を伝える",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「今取り組んでいることを説明する」で使う表現を音と意味で確認する。例：We're working on a new feature."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Why are you working on it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「今の仕事と目的を伝える」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-029",
+      "topic_id": "TOPIC-06",
+      "title": "今取り組んでいることを説明する：表現を会話で使う",
+      "stage": "give_reasons",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "今の仕事と目的を伝える",
+      "expression_example": "We're working on a new feature.",
+      "partner_question_example": "Why are you working on it?",
+      "success_criteria": [
+        "今の仕事と目的を伝える",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「今取り組んでいることを説明する」で使う表現を音と意味で確認する。例：We're working on a new feature."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Why are you working on it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「今の仕事と目的を伝える」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-030",
+      "topic_id": "TOPIC-06",
+      "title": "今取り組んでいることを説明する：別の言い方で伝える",
+      "stage": "give_reasons",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "今の仕事と目的を伝える",
+      "expression_example": "We're working on a new feature.",
+      "partner_question_example": "Why are you working on it?",
+      "success_criteria": [
+        "今の仕事と目的を伝える",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「今取り組んでいることを説明する」で使う表現を音と意味で確認する。例：We're working on a new feature."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Why are you working on it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「今の仕事と目的を伝える」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-031",
+      "topic_id": "TOPIC-07",
+      "title": "仕事の課題を説明する：一通り練習する",
+      "stage": "give_reasons",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "困っている状況と理由を伝える",
+      "expression_example": "This takes time because we check it manually.",
+      "partner_question_example": "Why does it take so long?",
+      "success_criteria": [
+        "困っている状況と理由を伝える",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「仕事の課題を説明する」で使う表現を音と意味で確認する。例：This takes time because we check it manually."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Why does it take so long?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「困っている状況と理由を伝える」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-032",
+      "topic_id": "TOPIC-07",
+      "title": "仕事の課題を説明する：聞き取りを重点的に練習する",
+      "stage": "give_reasons",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "困っている状況と理由を伝える",
+      "expression_example": "This takes time because we check it manually.",
+      "partner_question_example": "Why does it take so long?",
+      "success_criteria": [
+        "困っている状況と理由を伝える",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「仕事の課題を説明する」で使う表現を音と意味で確認する。例：This takes time because we check it manually."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「Why does it take so long?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「困っている状況と理由を伝える」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-033",
+      "topic_id": "TOPIC-07",
+      "title": "仕事の課題を説明する：自分の言葉で話す",
+      "stage": "give_reasons",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "困っている状況と理由を伝える",
+      "expression_example": "This takes time because we check it manually.",
+      "partner_question_example": "Why does it take so long?",
+      "success_criteria": [
+        "困っている状況と理由を伝える",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「仕事の課題を説明する」で使う表現を音と意味で確認する。例：This takes time because we check it manually."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Why does it take so long?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「困っている状況と理由を伝える」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-034",
+      "topic_id": "TOPIC-07",
+      "title": "仕事の課題を説明する：表現を会話で使う",
+      "stage": "give_reasons",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "困っている状況と理由を伝える",
+      "expression_example": "This takes time because we check it manually.",
+      "partner_question_example": "Why does it take so long?",
+      "success_criteria": [
+        "困っている状況と理由を伝える",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「仕事の課題を説明する」で使う表現を音と意味で確認する。例：This takes time because we check it manually."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Why does it take so long?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「困っている状況と理由を伝える」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-035",
+      "topic_id": "TOPIC-07",
+      "title": "仕事の課題を説明する：別の言い方で伝える",
+      "stage": "give_reasons",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "困っている状況と理由を伝える",
+      "expression_example": "This takes time because we check it manually.",
+      "partner_question_example": "Why does it take so long?",
+      "success_criteria": [
+        "困っている状況と理由を伝える",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「仕事の課題を説明する」で使う表現を音と意味で確認する。例：This takes time because we check it manually."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Why does it take so long?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「困っている状況と理由を伝える」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-036",
+      "topic_id": "TOPIC-08",
+      "title": "二つの進め方を比べる：一通り練習する",
+      "stage": "give_reasons",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "二つの方法から選び理由を説明する",
+      "expression_example": "I prefer this approach because it's simpler.",
+      "partner_question_example": "Why do you prefer that approach?",
+      "success_criteria": [
+        "二つの方法から選び理由を説明する",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「二つの進め方を比べる」で使う表現を音と意味で確認する。例：I prefer this approach because it's simpler."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Why do you prefer that approach?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「二つの方法から選び理由を説明する」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-037",
+      "topic_id": "TOPIC-08",
+      "title": "二つの進め方を比べる：聞き取りを重点的に練習する",
+      "stage": "give_reasons",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "二つの方法から選び理由を説明する",
+      "expression_example": "I prefer this approach because it's simpler.",
+      "partner_question_example": "Why do you prefer that approach?",
+      "success_criteria": [
+        "二つの方法から選び理由を説明する",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「二つの進め方を比べる」で使う表現を音と意味で確認する。例：I prefer this approach because it's simpler."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「Why do you prefer that approach?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「二つの方法から選び理由を説明する」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-038",
+      "topic_id": "TOPIC-08",
+      "title": "二つの進め方を比べる：自分の言葉で話す",
+      "stage": "give_reasons",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "二つの方法から選び理由を説明する",
+      "expression_example": "I prefer this approach because it's simpler.",
+      "partner_question_example": "Why do you prefer that approach?",
+      "success_criteria": [
+        "二つの方法から選び理由を説明する",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「二つの進め方を比べる」で使う表現を音と意味で確認する。例：I prefer this approach because it's simpler."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Why do you prefer that approach?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「二つの方法から選び理由を説明する」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-039",
+      "topic_id": "TOPIC-08",
+      "title": "二つの進め方を比べる：表現を会話で使う",
+      "stage": "give_reasons",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "二つの方法から選び理由を説明する",
+      "expression_example": "I prefer this approach because it's simpler.",
+      "partner_question_example": "Why do you prefer that approach?",
+      "success_criteria": [
+        "二つの方法から選び理由を説明する",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「二つの進め方を比べる」で使う表現を音と意味で確認する。例：I prefer this approach because it's simpler."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Why do you prefer that approach?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「二つの方法から選び理由を説明する」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-040",
+      "topic_id": "TOPIC-08",
+      "title": "二つの進め方を比べる：別の言い方で伝える",
+      "stage": "give_reasons",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "二つの方法から選び理由を説明する",
+      "expression_example": "I prefer this approach because it's simpler.",
+      "partner_question_example": "Why do you prefer that approach?",
+      "success_criteria": [
+        "二つの方法から選び理由を説明する",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「二つの進め方を比べる」で使う表現を音と意味で確認する。例：I prefer this approach because it's simpler."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Why do you prefer that approach?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「二つの方法から選び理由を説明する」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-041",
+      "topic_id": "TOPIC-09",
+      "title": "優先順位を説明する：一通り練習する",
+      "stage": "give_reasons",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "先に取り組む仕事と理由を伝える",
+      "expression_example": "We should fix this issue first.",
+      "partner_question_example": "Why is this more urgent?",
+      "success_criteria": [
+        "先に取り組む仕事と理由を伝える",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「優先順位を説明する」で使う表現を音と意味で確認する。例：We should fix this issue first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Why is this more urgent?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「先に取り組む仕事と理由を伝える」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-042",
+      "topic_id": "TOPIC-09",
+      "title": "優先順位を説明する：聞き取りを重点的に練習する",
+      "stage": "give_reasons",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "先に取り組む仕事と理由を伝える",
+      "expression_example": "We should fix this issue first.",
+      "partner_question_example": "Why is this more urgent?",
+      "success_criteria": [
+        "先に取り組む仕事と理由を伝える",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「優先順位を説明する」で使う表現を音と意味で確認する。例：We should fix this issue first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「Why is this more urgent?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「先に取り組む仕事と理由を伝える」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-043",
+      "topic_id": "TOPIC-09",
+      "title": "優先順位を説明する：自分の言葉で話す",
+      "stage": "give_reasons",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "先に取り組む仕事と理由を伝える",
+      "expression_example": "We should fix this issue first.",
+      "partner_question_example": "Why is this more urgent?",
+      "success_criteria": [
+        "先に取り組む仕事と理由を伝える",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「優先順位を説明する」で使う表現を音と意味で確認する。例：We should fix this issue first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Why is this more urgent?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「先に取り組む仕事と理由を伝える」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-044",
+      "topic_id": "TOPIC-09",
+      "title": "優先順位を説明する：表現を会話で使う",
+      "stage": "give_reasons",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "先に取り組む仕事と理由を伝える",
+      "expression_example": "We should fix this issue first.",
+      "partner_question_example": "Why is this more urgent?",
+      "success_criteria": [
+        "先に取り組む仕事と理由を伝える",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「優先順位を説明する」で使う表現を音と意味で確認する。例：We should fix this issue first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Why is this more urgent?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「先に取り組む仕事と理由を伝える」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-045",
+      "topic_id": "TOPIC-09",
+      "title": "優先順位を説明する：別の言い方で伝える",
+      "stage": "give_reasons",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "先に取り組む仕事と理由を伝える",
+      "expression_example": "We should fix this issue first.",
+      "partner_question_example": "Why is this more urgent?",
+      "success_criteria": [
+        "先に取り組む仕事と理由を伝える",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「優先順位を説明する」で使う表現を音と意味で確認する。例：We should fix this issue first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Why is this more urgent?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「先に取り組む仕事と理由を伝える」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-046",
+      "topic_id": "TOPIC-10",
+      "title": "相談して助けを求める：一通り練習する",
+      "stage": "give_reasons",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "必要な支援とその理由を伝える",
+      "expression_example": "Could you help me review this plan?",
+      "partner_question_example": "What kind of help do you need?",
+      "success_criteria": [
+        "必要な支援とその理由を伝える",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「相談して助けを求める」で使う表現を音と意味で確認する。例：Could you help me review this plan?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What kind of help do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「必要な支援とその理由を伝える」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-047",
+      "topic_id": "TOPIC-10",
+      "title": "相談して助けを求める：聞き取りを重点的に練習する",
+      "stage": "give_reasons",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "必要な支援とその理由を伝える",
+      "expression_example": "Could you help me review this plan?",
+      "partner_question_example": "What kind of help do you need?",
+      "success_criteria": [
+        "必要な支援とその理由を伝える",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「相談して助けを求める」で使う表現を音と意味で確認する。例：Could you help me review this plan?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What kind of help do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「必要な支援とその理由を伝える」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-048",
+      "topic_id": "TOPIC-10",
+      "title": "相談して助けを求める：自分の言葉で話す",
+      "stage": "give_reasons",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "必要な支援とその理由を伝える",
+      "expression_example": "Could you help me review this plan?",
+      "partner_question_example": "What kind of help do you need?",
+      "success_criteria": [
+        "必要な支援とその理由を伝える",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「相談して助けを求める」で使う表現を音と意味で確認する。例：Could you help me review this plan?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What kind of help do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「必要な支援とその理由を伝える」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-049",
+      "topic_id": "TOPIC-10",
+      "title": "相談して助けを求める：表現を会話で使う",
+      "stage": "give_reasons",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "必要な支援とその理由を伝える",
+      "expression_example": "Could you help me review this plan?",
+      "partner_question_example": "What kind of help do you need?",
+      "success_criteria": [
+        "必要な支援とその理由を伝える",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「相談して助けを求める」で使う表現を音と意味で確認する。例：Could you help me review this plan?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What kind of help do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「必要な支援とその理由を伝える」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-050",
+      "topic_id": "TOPIC-10",
+      "title": "相談して助けを求める：別の言い方で伝える",
+      "stage": "give_reasons",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "必要な支援とその理由を伝える",
+      "expression_example": "Could you help me review this plan?",
+      "partner_question_example": "What kind of help do you need?",
+      "success_criteria": [
+        "必要な支援とその理由を伝える",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「相談して助けを求める」で使う表現を音と意味で確認する。例：Could you help me review this plan?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What kind of help do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「必要な支援とその理由を伝える」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-051",
+      "topic_id": "TOPIC-11",
+      "title": "会議で自分の考えを伝える：一通り練習する",
+      "stage": "express_opinion",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "相手の案を聞き意見と理由を伝える",
+      "expression_example": "I think we should start with a small test.",
+      "partner_question_example": "What do you think of this plan?",
+      "success_criteria": [
+        "相手の案を聞き意見と理由を伝える",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「会議で自分の考えを伝える」で使う表現を音と意味で確認する。例：I think we should start with a small test."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What do you think of this plan?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「相手の案を聞き意見と理由を伝える」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-052",
+      "topic_id": "TOPIC-11",
+      "title": "会議で自分の考えを伝える：聞き取りを重点的に練習する",
+      "stage": "express_opinion",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "相手の案を聞き意見と理由を伝える",
+      "expression_example": "I think we should start with a small test.",
+      "partner_question_example": "What do you think of this plan?",
+      "success_criteria": [
+        "相手の案を聞き意見と理由を伝える",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「会議で自分の考えを伝える」で使う表現を音と意味で確認する。例：I think we should start with a small test."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What do you think of this plan?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「相手の案を聞き意見と理由を伝える」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-053",
+      "topic_id": "TOPIC-11",
+      "title": "会議で自分の考えを伝える：自分の言葉で話す",
+      "stage": "express_opinion",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "相手の案を聞き意見と理由を伝える",
+      "expression_example": "I think we should start with a small test.",
+      "partner_question_example": "What do you think of this plan?",
+      "success_criteria": [
+        "相手の案を聞き意見と理由を伝える",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「会議で自分の考えを伝える」で使う表現を音と意味で確認する。例：I think we should start with a small test."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What do you think of this plan?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「相手の案を聞き意見と理由を伝える」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-054",
+      "topic_id": "TOPIC-11",
+      "title": "会議で自分の考えを伝える：表現を会話で使う",
+      "stage": "express_opinion",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "相手の案を聞き意見と理由を伝える",
+      "expression_example": "I think we should start with a small test.",
+      "partner_question_example": "What do you think of this plan?",
+      "success_criteria": [
+        "相手の案を聞き意見と理由を伝える",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「会議で自分の考えを伝える」で使う表現を音と意味で確認する。例：I think we should start with a small test."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What do you think of this plan?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「相手の案を聞き意見と理由を伝える」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-055",
+      "topic_id": "TOPIC-11",
+      "title": "会議で自分の考えを伝える：別の言い方で伝える",
+      "stage": "express_opinion",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "相手の案を聞き意見と理由を伝える",
+      "expression_example": "I think we should start with a small test.",
+      "partner_question_example": "What do you think of this plan?",
+      "success_criteria": [
+        "相手の案を聞き意見と理由を伝える",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「会議で自分の考えを伝える」で使う表現を音と意味で確認する。例：I think we should start with a small test."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What do you think of this plan?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「相手の案を聞き意見と理由を伝える」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-056",
+      "topic_id": "TOPIC-12",
+      "title": "賛成して理由を添える：一通り練習する",
+      "stage": "express_opinion",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "賛成する点と理由を具体的に説明する",
+      "expression_example": "I agree because this would save time.",
+      "partner_question_example": "Which part do you agree with?",
+      "success_criteria": [
+        "賛成する点と理由を具体的に説明する",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「賛成して理由を添える」で使う表現を音と意味で確認する。例：I agree because this would save time."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Which part do you agree with?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「賛成する点と理由を具体的に説明する」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-057",
+      "topic_id": "TOPIC-12",
+      "title": "賛成して理由を添える：聞き取りを重点的に練習する",
+      "stage": "express_opinion",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "賛成する点と理由を具体的に説明する",
+      "expression_example": "I agree because this would save time.",
+      "partner_question_example": "Which part do you agree with?",
+      "success_criteria": [
+        "賛成する点と理由を具体的に説明する",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「賛成して理由を添える」で使う表現を音と意味で確認する。例：I agree because this would save time."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「Which part do you agree with?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「賛成する点と理由を具体的に説明する」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-058",
+      "topic_id": "TOPIC-12",
+      "title": "賛成して理由を添える：自分の言葉で話す",
+      "stage": "express_opinion",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "賛成する点と理由を具体的に説明する",
+      "expression_example": "I agree because this would save time.",
+      "partner_question_example": "Which part do you agree with?",
+      "success_criteria": [
+        "賛成する点と理由を具体的に説明する",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「賛成して理由を添える」で使う表現を音と意味で確認する。例：I agree because this would save time."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Which part do you agree with?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「賛成する点と理由を具体的に説明する」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-059",
+      "topic_id": "TOPIC-12",
+      "title": "賛成して理由を添える：表現を会話で使う",
+      "stage": "express_opinion",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "賛成する点と理由を具体的に説明する",
+      "expression_example": "I agree because this would save time.",
+      "partner_question_example": "Which part do you agree with?",
+      "success_criteria": [
+        "賛成する点と理由を具体的に説明する",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「賛成して理由を添える」で使う表現を音と意味で確認する。例：I agree because this would save time."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Which part do you agree with?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「賛成する点と理由を具体的に説明する」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-060",
+      "topic_id": "TOPIC-12",
+      "title": "賛成して理由を添える：別の言い方で伝える",
+      "stage": "express_opinion",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "賛成する点と理由を具体的に説明する",
+      "expression_example": "I agree because this would save time.",
+      "partner_question_example": "Which part do you agree with?",
+      "success_criteria": [
+        "賛成する点と理由を具体的に説明する",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「賛成して理由を添える」で使う表現を音と意味で確認する。例：I agree because this would save time."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Which part do you agree with?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「賛成する点と理由を具体的に説明する」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-061",
+      "topic_id": "TOPIC-13",
+      "title": "別の考えを丁寧に伝える：一通り練習する",
+      "stage": "express_opinion",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "異なる意見と代案を伝える",
+      "expression_example": "I see your point, but we could try another approach.",
+      "partner_question_example": "What would you suggest instead?",
+      "success_criteria": [
+        "異なる意見と代案を伝える",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「別の考えを丁寧に伝える」で使う表現を音と意味で確認する。例：I see your point, but we could try another approach."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What would you suggest instead?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「異なる意見と代案を伝える」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-062",
+      "topic_id": "TOPIC-13",
+      "title": "別の考えを丁寧に伝える：聞き取りを重点的に練習する",
+      "stage": "express_opinion",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "異なる意見と代案を伝える",
+      "expression_example": "I see your point, but we could try another approach.",
+      "partner_question_example": "What would you suggest instead?",
+      "success_criteria": [
+        "異なる意見と代案を伝える",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「別の考えを丁寧に伝える」で使う表現を音と意味で確認する。例：I see your point, but we could try another approach."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What would you suggest instead?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「異なる意見と代案を伝える」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-063",
+      "topic_id": "TOPIC-13",
+      "title": "別の考えを丁寧に伝える：自分の言葉で話す",
+      "stage": "express_opinion",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "異なる意見と代案を伝える",
+      "expression_example": "I see your point, but we could try another approach.",
+      "partner_question_example": "What would you suggest instead?",
+      "success_criteria": [
+        "異なる意見と代案を伝える",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「別の考えを丁寧に伝える」で使う表現を音と意味で確認する。例：I see your point, but we could try another approach."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What would you suggest instead?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「異なる意見と代案を伝える」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-064",
+      "topic_id": "TOPIC-13",
+      "title": "別の考えを丁寧に伝える：表現を会話で使う",
+      "stage": "express_opinion",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "異なる意見と代案を伝える",
+      "expression_example": "I see your point, but we could try another approach.",
+      "partner_question_example": "What would you suggest instead?",
+      "success_criteria": [
+        "異なる意見と代案を伝える",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「別の考えを丁寧に伝える」で使う表現を音と意味で確認する。例：I see your point, but we could try another approach."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What would you suggest instead?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「異なる意見と代案を伝える」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-065",
+      "topic_id": "TOPIC-13",
+      "title": "別の考えを丁寧に伝える：別の言い方で伝える",
+      "stage": "express_opinion",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "異なる意見と代案を伝える",
+      "expression_example": "I see your point, but we could try another approach.",
+      "partner_question_example": "What would you suggest instead?",
+      "success_criteria": [
+        "異なる意見と代案を伝える",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「別の考えを丁寧に伝える」で使う表現を音と意味で確認する。例：I see your point, but we could try another approach."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What would you suggest instead?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「異なる意見と代案を伝える」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-066",
+      "topic_id": "TOPIC-14",
+      "title": "情報が足りないときに質問する：一通り練習する",
+      "stage": "express_opinion",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "判断に必要な情報を聞いてから意見を伝える",
+      "expression_example": "Could you explain how this would work?",
+      "partner_question_example": "What information do you need?",
+      "success_criteria": [
+        "判断に必要な情報を聞いてから意見を伝える",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「情報が足りないときに質問する」で使う表現を音と意味で確認する。例：Could you explain how this would work?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What information do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「判断に必要な情報を聞いてから意見を伝える」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-067",
+      "topic_id": "TOPIC-14",
+      "title": "情報が足りないときに質問する：聞き取りを重点的に練習する",
+      "stage": "express_opinion",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "判断に必要な情報を聞いてから意見を伝える",
+      "expression_example": "Could you explain how this would work?",
+      "partner_question_example": "What information do you need?",
+      "success_criteria": [
+        "判断に必要な情報を聞いてから意見を伝える",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「情報が足りないときに質問する」で使う表現を音と意味で確認する。例：Could you explain how this would work?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What information do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「判断に必要な情報を聞いてから意見を伝える」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-068",
+      "topic_id": "TOPIC-14",
+      "title": "情報が足りないときに質問する：自分の言葉で話す",
+      "stage": "express_opinion",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "判断に必要な情報を聞いてから意見を伝える",
+      "expression_example": "Could you explain how this would work?",
+      "partner_question_example": "What information do you need?",
+      "success_criteria": [
+        "判断に必要な情報を聞いてから意見を伝える",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「情報が足りないときに質問する」で使う表現を音と意味で確認する。例：Could you explain how this would work?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What information do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「判断に必要な情報を聞いてから意見を伝える」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-069",
+      "topic_id": "TOPIC-14",
+      "title": "情報が足りないときに質問する：表現を会話で使う",
+      "stage": "express_opinion",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "判断に必要な情報を聞いてから意見を伝える",
+      "expression_example": "Could you explain how this would work?",
+      "partner_question_example": "What information do you need?",
+      "success_criteria": [
+        "判断に必要な情報を聞いてから意見を伝える",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「情報が足りないときに質問する」で使う表現を音と意味で確認する。例：Could you explain how this would work?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What information do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「判断に必要な情報を聞いてから意見を伝える」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-070",
+      "topic_id": "TOPIC-14",
+      "title": "情報が足りないときに質問する：別の言い方で伝える",
+      "stage": "express_opinion",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "判断に必要な情報を聞いてから意見を伝える",
+      "expression_example": "Could you explain how this would work?",
+      "partner_question_example": "What information do you need?",
+      "success_criteria": [
+        "判断に必要な情報を聞いてから意見を伝える",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「情報が足りないときに質問する」で使う表現を音と意味で確認する。例：Could you explain how this would work?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What information do you need?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「判断に必要な情報を聞いてから意見を伝える」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-071",
+      "topic_id": "TOPIC-15",
+      "title": "進捗共有の改善を提案する：一通り練習する",
+      "stage": "express_opinion",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "共有方法の改善案と利点を説明する",
+      "expression_example": "How about sharing a short update each week?",
+      "partner_question_example": "How would that help the team?",
+      "success_criteria": [
+        "共有方法の改善案と利点を説明する",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「進捗共有の改善を提案する」で使う表現を音と意味で確認する。例：How about sharing a short update each week?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「How would that help the team?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「共有方法の改善案と利点を説明する」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-072",
+      "topic_id": "TOPIC-15",
+      "title": "進捗共有の改善を提案する：聞き取りを重点的に練習する",
+      "stage": "express_opinion",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "共有方法の改善案と利点を説明する",
+      "expression_example": "How about sharing a short update each week?",
+      "partner_question_example": "How would that help the team?",
+      "success_criteria": [
+        "共有方法の改善案と利点を説明する",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「進捗共有の改善を提案する」で使う表現を音と意味で確認する。例：How about sharing a short update each week?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「How would that help the team?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「共有方法の改善案と利点を説明する」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-073",
+      "topic_id": "TOPIC-15",
+      "title": "進捗共有の改善を提案する：自分の言葉で話す",
+      "stage": "express_opinion",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "共有方法の改善案と利点を説明する",
+      "expression_example": "How about sharing a short update each week?",
+      "partner_question_example": "How would that help the team?",
+      "success_criteria": [
+        "共有方法の改善案と利点を説明する",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「進捗共有の改善を提案する」で使う表現を音と意味で確認する。例：How about sharing a short update each week?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「How would that help the team?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「共有方法の改善案と利点を説明する」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-074",
+      "topic_id": "TOPIC-15",
+      "title": "進捗共有の改善を提案する：表現を会話で使う",
+      "stage": "express_opinion",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "共有方法の改善案と利点を説明する",
+      "expression_example": "How about sharing a short update each week?",
+      "partner_question_example": "How would that help the team?",
+      "success_criteria": [
+        "共有方法の改善案と利点を説明する",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「進捗共有の改善を提案する」で使う表現を音と意味で確認する。例：How about sharing a short update each week?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「How would that help the team?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「共有方法の改善案と利点を説明する」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-075",
+      "topic_id": "TOPIC-15",
+      "title": "進捗共有の改善を提案する：別の言い方で伝える",
+      "stage": "express_opinion",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "共有方法の改善案と利点を説明する",
+      "expression_example": "How about sharing a short update each week?",
+      "partner_question_example": "How would that help the team?",
+      "success_criteria": [
+        "共有方法の改善案と利点を説明する",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「進捗共有の改善を提案する」で使う表現を音と意味で確認する。例：How about sharing a short update each week?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「How would that help the team?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「共有方法の改善案と利点を説明する」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-076",
+      "topic_id": "TOPIC-16",
+      "title": "会議時間の短縮を提案する：一通り練習する",
+      "stage": "handle_questions",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "短縮案を示して懸念に答える",
+      "expression_example": "We could share the agenda before the meeting.",
+      "partner_question_example": "What if we need more time for discussion?",
+      "success_criteria": [
+        "短縮案を示して懸念に答える",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「会議時間の短縮を提案する」で使う表現を音と意味で確認する。例：We could share the agenda before the meeting."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What if we need more time for discussion?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「短縮案を示して懸念に答える」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-077",
+      "topic_id": "TOPIC-16",
+      "title": "会議時間の短縮を提案する：聞き取りを重点的に練習する",
+      "stage": "handle_questions",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "短縮案を示して懸念に答える",
+      "expression_example": "We could share the agenda before the meeting.",
+      "partner_question_example": "What if we need more time for discussion?",
+      "success_criteria": [
+        "短縮案を示して懸念に答える",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「会議時間の短縮を提案する」で使う表現を音と意味で確認する。例：We could share the agenda before the meeting."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What if we need more time for discussion?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「短縮案を示して懸念に答える」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-078",
+      "topic_id": "TOPIC-16",
+      "title": "会議時間の短縮を提案する：自分の言葉で話す",
+      "stage": "handle_questions",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "短縮案を示して懸念に答える",
+      "expression_example": "We could share the agenda before the meeting.",
+      "partner_question_example": "What if we need more time for discussion?",
+      "success_criteria": [
+        "短縮案を示して懸念に答える",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「会議時間の短縮を提案する」で使う表現を音と意味で確認する。例：We could share the agenda before the meeting."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What if we need more time for discussion?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「短縮案を示して懸念に答える」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-079",
+      "topic_id": "TOPIC-16",
+      "title": "会議時間の短縮を提案する：表現を会話で使う",
+      "stage": "handle_questions",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "短縮案を示して懸念に答える",
+      "expression_example": "We could share the agenda before the meeting.",
+      "partner_question_example": "What if we need more time for discussion?",
+      "success_criteria": [
+        "短縮案を示して懸念に答える",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「会議時間の短縮を提案する」で使う表現を音と意味で確認する。例：We could share the agenda before the meeting."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What if we need more time for discussion?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「短縮案を示して懸念に答える」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-080",
+      "topic_id": "TOPIC-16",
+      "title": "会議時間の短縮を提案する：別の言い方で伝える",
+      "stage": "handle_questions",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "短縮案を示して懸念に答える",
+      "expression_example": "We could share the agenda before the meeting.",
+      "partner_question_example": "What if we need more time for discussion?",
+      "success_criteria": [
+        "短縮案を示して懸念に答える",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「会議時間の短縮を提案する」で使う表現を音と意味で確認する。例：We could share the agenda before the meeting."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What if we need more time for discussion?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「短縮案を示して懸念に答える」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-081",
+      "topic_id": "TOPIC-17",
+      "title": "問い合わせ対応の改善を提案する：一通り練習する",
+      "stage": "handle_questions",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "改善案を説明して実施上の質問に答える",
+      "expression_example": "We could create a guide for common questions.",
+      "partner_question_example": "Who would keep the guide up to date?",
+      "success_criteria": [
+        "改善案を説明して実施上の質問に答える",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「問い合わせ対応の改善を提案する」で使う表現を音と意味で確認する。例：We could create a guide for common questions."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Who would keep the guide up to date?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「改善案を説明して実施上の質問に答える」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-082",
+      "topic_id": "TOPIC-17",
+      "title": "問い合わせ対応の改善を提案する：聞き取りを重点的に練習する",
+      "stage": "handle_questions",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "改善案を説明して実施上の質問に答える",
+      "expression_example": "We could create a guide for common questions.",
+      "partner_question_example": "Who would keep the guide up to date?",
+      "success_criteria": [
+        "改善案を説明して実施上の質問に答える",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「問い合わせ対応の改善を提案する」で使う表現を音と意味で確認する。例：We could create a guide for common questions."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「Who would keep the guide up to date?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「改善案を説明して実施上の質問に答える」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-083",
+      "topic_id": "TOPIC-17",
+      "title": "問い合わせ対応の改善を提案する：自分の言葉で話す",
+      "stage": "handle_questions",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "改善案を説明して実施上の質問に答える",
+      "expression_example": "We could create a guide for common questions.",
+      "partner_question_example": "Who would keep the guide up to date?",
+      "success_criteria": [
+        "改善案を説明して実施上の質問に答える",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「問い合わせ対応の改善を提案する」で使う表現を音と意味で確認する。例：We could create a guide for common questions."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Who would keep the guide up to date?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「改善案を説明して実施上の質問に答える」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-084",
+      "topic_id": "TOPIC-17",
+      "title": "問い合わせ対応の改善を提案する：表現を会話で使う",
+      "stage": "handle_questions",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "改善案を説明して実施上の質問に答える",
+      "expression_example": "We could create a guide for common questions.",
+      "partner_question_example": "Who would keep the guide up to date?",
+      "success_criteria": [
+        "改善案を説明して実施上の質問に答える",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「問い合わせ対応の改善を提案する」で使う表現を音と意味で確認する。例：We could create a guide for common questions."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「Who would keep the guide up to date?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「改善案を説明して実施上の質問に答える」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-085",
+      "topic_id": "TOPIC-17",
+      "title": "問い合わせ対応の改善を提案する：別の言い方で伝える",
+      "stage": "handle_questions",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "改善案を説明して実施上の質問に答える",
+      "expression_example": "We could create a guide for common questions.",
+      "partner_question_example": "Who would keep the guide up to date?",
+      "success_criteria": [
+        "改善案を説明して実施上の質問に答える",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「問い合わせ対応の改善を提案する」で使う表現を音と意味で確認する。例：We could create a guide for common questions."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「Who would keep the guide up to date?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「改善案を説明して実施上の質問に答える」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-086",
+      "topic_id": "TOPIC-18",
+      "title": "小さな実験の進め方を提案する：一通り練習する",
+      "stage": "handle_questions",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "試す範囲と結果の確認方法を説明する",
+      "expression_example": "Let's test this with a small group first.",
+      "partner_question_example": "How will we know if the test works?",
+      "success_criteria": [
+        "試す範囲と結果の確認方法を説明する",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「小さな実験の進め方を提案する」で使う表現を音と意味で確認する。例：Let's test this with a small group first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「How will we know if the test works?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「試す範囲と結果の確認方法を説明する」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-087",
+      "topic_id": "TOPIC-18",
+      "title": "小さな実験の進め方を提案する：聞き取りを重点的に練習する",
+      "stage": "handle_questions",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "試す範囲と結果の確認方法を説明する",
+      "expression_example": "Let's test this with a small group first.",
+      "partner_question_example": "How will we know if the test works?",
+      "success_criteria": [
+        "試す範囲と結果の確認方法を説明する",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「小さな実験の進め方を提案する」で使う表現を音と意味で確認する。例：Let's test this with a small group first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「How will we know if the test works?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「試す範囲と結果の確認方法を説明する」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-088",
+      "topic_id": "TOPIC-18",
+      "title": "小さな実験の進め方を提案する：自分の言葉で話す",
+      "stage": "handle_questions",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "試す範囲と結果の確認方法を説明する",
+      "expression_example": "Let's test this with a small group first.",
+      "partner_question_example": "How will we know if the test works?",
+      "success_criteria": [
+        "試す範囲と結果の確認方法を説明する",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「小さな実験の進め方を提案する」で使う表現を音と意味で確認する。例：Let's test this with a small group first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「How will we know if the test works?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「試す範囲と結果の確認方法を説明する」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-089",
+      "topic_id": "TOPIC-18",
+      "title": "小さな実験の進め方を提案する：表現を会話で使う",
+      "stage": "handle_questions",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "試す範囲と結果の確認方法を説明する",
+      "expression_example": "Let's test this with a small group first.",
+      "partner_question_example": "How will we know if the test works?",
+      "success_criteria": [
+        "試す範囲と結果の確認方法を説明する",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「小さな実験の進め方を提案する」で使う表現を音と意味で確認する。例：Let's test this with a small group first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「How will we know if the test works?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「試す範囲と結果の確認方法を説明する」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-090",
+      "topic_id": "TOPIC-18",
+      "title": "小さな実験の進め方を提案する：別の言い方で伝える",
+      "stage": "handle_questions",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "試す範囲と結果の確認方法を説明する",
+      "expression_example": "Let's test this with a small group first.",
+      "partner_question_example": "How will we know if the test works?",
+      "success_criteria": [
+        "試す範囲と結果の確認方法を説明する",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「小さな実験の進め方を提案する」で使う表現を音と意味で確認する。例：Let's test this with a small group first."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「How will we know if the test works?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「試す範囲と結果の確認方法を説明する」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-091",
+      "topic_id": "TOPIC-19",
+      "title": "提案への懸念に対応する：一通り練習する",
+      "stage": "handle_questions",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "懸念を確認し提案を調整する",
+      "expression_example": "We could reduce the scope to address that concern.",
+      "partner_question_example": "What would you change to make this easier?",
+      "success_criteria": [
+        "懸念を確認し提案を調整する",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「提案への懸念に対応する」で使う表現を音と意味で確認する。例：We could reduce the scope to address that concern."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What would you change to make this easier?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「懸念を確認し提案を調整する」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-092",
+      "topic_id": "TOPIC-19",
+      "title": "提案への懸念に対応する：聞き取りを重点的に練習する",
+      "stage": "handle_questions",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "懸念を確認し提案を調整する",
+      "expression_example": "We could reduce the scope to address that concern.",
+      "partner_question_example": "What would you change to make this easier?",
+      "success_criteria": [
+        "懸念を確認し提案を調整する",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「提案への懸念に対応する」で使う表現を音と意味で確認する。例：We could reduce the scope to address that concern."
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What would you change to make this easier?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「懸念を確認し提案を調整する」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-093",
+      "topic_id": "TOPIC-19",
+      "title": "提案への懸念に対応する：自分の言葉で話す",
+      "stage": "handle_questions",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "懸念を確認し提案を調整する",
+      "expression_example": "We could reduce the scope to address that concern.",
+      "partner_question_example": "What would you change to make this easier?",
+      "success_criteria": [
+        "懸念を確認し提案を調整する",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「提案への懸念に対応する」で使う表現を音と意味で確認する。例：We could reduce the scope to address that concern."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What would you change to make this easier?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「懸念を確認し提案を調整する」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-094",
+      "topic_id": "TOPIC-19",
+      "title": "提案への懸念に対応する：表現を会話で使う",
+      "stage": "handle_questions",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "懸念を確認し提案を調整する",
+      "expression_example": "We could reduce the scope to address that concern.",
+      "partner_question_example": "What would you change to make this easier?",
+      "success_criteria": [
+        "懸念を確認し提案を調整する",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「提案への懸念に対応する」で使う表現を音と意味で確認する。例：We could reduce the scope to address that concern."
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What would you change to make this easier?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「懸念を確認し提案を調整する」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-095",
+      "topic_id": "TOPIC-19",
+      "title": "提案への懸念に対応する：別の言い方で伝える",
+      "stage": "handle_questions",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "懸念を確認し提案を調整する",
+      "expression_example": "We could reduce the scope to address that concern.",
+      "partner_question_example": "What would you change to make this easier?",
+      "success_criteria": [
+        "懸念を確認し提案を調整する",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「提案への懸念に対応する」で使う表現を音と意味で確認する。例：We could reduce the scope to address that concern."
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What would you change to make this easier?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「懸念を確認し提案を調整する」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-096",
+      "topic_id": "TOPIC-20",
+      "title": "次の行動を確認する：一通り練習する",
+      "stage": "handle_questions",
+      "mode": "balanced",
+      "duration_minutes": 10,
+      "goal": "議論をまとめ担当と次の行動を確認する",
+      "expression_example": "Shall we confirm who's doing what next?",
+      "partner_question_example": "What should we do next, and who will do it?",
+      "success_criteria": [
+        "議論をまとめ担当と次の行動を確認する",
+        "相手の質問を理解し、テーマの目標を達成する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 2,
+          "task": "「次の行動を確認する」で使う表現を音と意味で確認する。例：Shall we confirm who's doing what next?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What should we do next, and who will do it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「議論をまとめ担当と次の行動を確認する」。表現を確認してから、質問の要点を聞き取り、目標に沿ってやり取りする。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-097",
+      "topic_id": "TOPIC-20",
+      "title": "次の行動を確認する：聞き取りを重点的に練習する",
+      "stage": "handle_questions",
+      "mode": "listening",
+      "duration_minutes": 10,
+      "goal": "議論をまとめ担当と次の行動を確認する",
+      "expression_example": "Shall we confirm who's doing what next?",
+      "partner_question_example": "What should we do next, and who will do it?",
+      "success_criteria": [
+        "議論をまとめ担当と次の行動を確認する",
+        "質問の要点を説明し、聞き返した後に内容に合う返答をする。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「次の行動を確認する」で使う表現を音と意味で確認する。例：Shall we confirm who's doing what next?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 4,
+          "task": "相手の質問例「What should we do next, and who will do it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 4,
+          "task": "AIを仕事の相手役として「議論をまとめ担当と次の行動を確認する」。相手の質問を文字なしで聞き、要点を答える。会話では聞き返して意図を確かめる。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-098",
+      "topic_id": "TOPIC-20",
+      "title": "次の行動を確認する：自分の言葉で話す",
+      "stage": "handle_questions",
+      "mode": "speaking",
+      "duration_minutes": 10,
+      "goal": "議論をまとめ担当と次の行動を確認する",
+      "expression_example": "Shall we confirm who's doing what next?",
+      "partner_question_example": "What should we do next, and who will do it?",
+      "success_criteria": [
+        "議論をまとめ担当と次の行動を確認する",
+        "例文を読むだけで終わらず、自分の状況に置き換えて答える。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「次の行動を確認する」で使う表現を音と意味で確認する。例：Shall we confirm who's doing what next?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What should we do next, and who will do it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 7,
+          "task": "AIを仕事の相手役として「議論をまとめ担当と次の行動を確認する」。最初は回答例を見ずに話す。続く質問にも自分の言葉で答え、必要なときにヒントを求める。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-099",
+      "topic_id": "TOPIC-20",
+      "title": "次の行動を確認する：表現を会話で使う",
+      "stage": "handle_questions",
+      "mode": "expressions",
+      "duration_minutes": 10,
+      "goal": "議論をまとめ担当と次の行動を確認する",
+      "expression_example": "Shall we confirm who's doing what next?",
+      "partner_question_example": "What should we do next, and who will do it?",
+      "success_criteria": [
+        "議論をまとめ担当と次の行動を確認する",
+        "表現例を自分の内容に置き換え、会話に合う場面で使う。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 3,
+          "task": "「次の行動を確認する」で使う表現を音と意味で確認する。例：Shall we confirm who's doing what next?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 1,
+          "task": "相手の質問例「What should we do next, and who will do it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「議論をまとめ担当と次の行動を確認する」。表現の意味と使い方を確認し、内容の異なる例文を作る。その表現を会話の流れで使う。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 1,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    },
+    {
+      "id": "LP-100",
+      "topic_id": "TOPIC-20",
+      "title": "次の行動を確認する：別の言い方で伝える",
+      "stage": "handle_questions",
+      "mode": "rephrase",
+      "duration_minutes": 10,
+      "goal": "議論をまとめ担当と次の行動を確認する",
+      "expression_example": "Shall we confirm who's doing what next?",
+      "partner_question_example": "What should we do next, and who will do it?",
+      "success_criteria": [
+        "議論をまとめ担当と次の行動を確認する",
+        "同じ内容を別の言葉で伝え、相手が理解したか確認する。"
+      ],
+      "steps": [
+        {
+          "kind": "expressions",
+          "minutes": 1,
+          "task": "「次の行動を確認する」で使う表現を音と意味で確認する。例：Shall we confirm who's doing what next?"
+        },
+        {
+          "kind": "listening",
+          "minutes": 2,
+          "task": "相手の質問例「What should we do next, and who will do it?」を文字なしで聞き、要点を答える。回答後に原文を確認する。"
+        },
+        {
+          "kind": "conversation",
+          "minutes": 5,
+          "task": "AIを仕事の相手役として「議論をまとめ担当と次の行動を確認する」。聞いた内容の要点を別の言葉で確認する。相手役から説明を求められたら、短く言い換える。"
+        },
+        {
+          "kind": "reflection",
+          "minutes": 2,
+          "task": "会話終了後に、できたことと優先して直す表現1〜2件を実際の発話と対応づけて確認する。"
+        }
+      ],
+      "content_status": "draft_unreviewed"
+    }
+  ],
+  "initial_stage_assignments": {
+    "owner": [
+      "short_response",
+      "give_reasons"
+    ],
+    "friends": [
+      "express_opinion",
+      "handle_questions"
+    ]
+  },
+  "initial_stage_assignment_basis": "開始状態の申告に基づく初期候補。測定済みの能力や永続的なレベル区分ではない。"
+}

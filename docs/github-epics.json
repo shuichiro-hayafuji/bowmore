@@ -1,0 +1,47 @@
+[
+  {
+    "epic": "EPIC-01",
+    "title": "学習目標と製品要件を決める",
+    "url": "https://github.com/shuichiro-hayafuji/bowmore/issues/1"
+  },
+  {
+    "epic": "EPIC-02",
+    "title": "音声AIの実現性を検証する",
+    "url": "https://github.com/shuichiro-hayafuji/bowmore/issues/2"
+  },
+  {
+    "epic": "EPIC-03",
+    "title": "学習開始と履歴保存の基盤を作る",
+    "url": "https://github.com/shuichiro-hayafuji/bowmore/issues/3"
+  },
+  {
+    "epic": "EPIC-04",
+    "title": "会話で使える単語と表現を学ぶ",
+    "url": "https://github.com/shuichiro-hayafuji/bowmore/issues/4"
+  },
+  {
+    "epic": "EPIC-05",
+    "title": "聞き取りとシャドーイングを支援する",
+    "url": "https://github.com/shuichiro-hayafuji/bowmore/issues/5"
+  },
+  {
+    "epic": "EPIC-06",
+    "title": "AIと音声で会話する",
+    "url": "https://github.com/shuichiro-hayafuji/bowmore/issues/6"
+  },
+  {
+    "epic": "EPIC-07",
+    "title": "復習と上達の確認をつなぐ",
+    "url": "https://github.com/shuichiro-hayafuji/bowmore/issues/7"
+  },
+  {
+    "epic": "EPIC-08",
+    "title": "ビジネス会話までの教材をそろえる",
+    "url": "https://github.com/shuichiro-hayafuji/bowmore/issues/8"
+  },
+  {
+    "epic": "EPIC-09",
+    "title": "安定運用と配布を完成させる",
+    "url": "https://github.com/shuichiro-hayafuji/bowmore/issues/9"
+  }
+]
